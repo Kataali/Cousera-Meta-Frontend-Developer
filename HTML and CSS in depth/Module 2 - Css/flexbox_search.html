@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Searchbar</title>
+    <style>
+        .container {
+            display: inline-flex;
+            flex: 1 1 300px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        .searchBox {
+            border: 0;
+            flex: 1;
+        }
+        .searchButton {
+            padding: 0.8rem;
+            background-color: #0f4a8a;
+            color: white;
+            border: 0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input class="searchBox" type="search" name="search" placeholder="Enter text here..">
+        <input type="submit" value="Search" class="searchButton">
+    </div>
+</body>
+</html>
