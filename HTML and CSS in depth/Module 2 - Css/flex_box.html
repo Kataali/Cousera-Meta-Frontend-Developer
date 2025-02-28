@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.box {
+				background-color: aquamarine;
+				border-radius: 5px;
+				margin: 2px;
+				padding: 10px;
+			}
+			.flex-container {
+				/* Layout direction */
+				display: flex;
+				/* Item Alignment along main axis */
+				/* commonly used */
+				justify-content: center;
+				/* Item Alignment along cross axis */
+				/* commonly used */
+				align-items: flex-end;
+				/* Used for packing flex lines and control over space. */
+				/* align-content: center; */
+				/* The default for this property is ‘nowrap’ which means the items 
+                will span the entire width of the axis.  */
+				flex-wrap: wrap;
+				/* used to set the main axis, which is a ‘row’ by default. */
+				flex-direction: column;
+                /* used to create space between the items along the main axis. */
+                gap: 10px;
+                /* You can also individually configure the gaps in rows and columns 
+                using row-gap and column-gap properties.  */
+
+                /*  Sets the three properties of flex, namely the flex-grow set to 0, 
+                flex-shrink to 1 and flex-basis to auto. */
+                flex: 0 1 auto;
+			}
+			.box3 {
+                /* For unique flex items on cross axis. for individuals items inside the flex */
+				background-color: blanchedalmond;
+				align-self: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex-container">
+			<div class="box box1">One..</div>
+			<div class="box box2">Two..</div>
+			<div class="box box3">Three..</div>
+			<div class="box box4">Four..</div>
+			<div class="box box5">Five..</div>
+			<div class="box box6">Six..</div>
+			<div class="box box7">Seven..</div>
+		</div>
+	</body>
+</html>
