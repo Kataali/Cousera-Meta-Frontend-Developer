@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0;
+            background-color: #333;
+            justify-content: stretch;
+        }
+        .container li {
+            list-style-type: none;
+            padding: 10px;
+        }
+        .container a {
+            display: inline-block;
+            padding: 25px;
+            margin: 0 25px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            text-decoration: none;
+        }
+        .container a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Me</a></li>
+    </ul>
+</body>
+</html>
