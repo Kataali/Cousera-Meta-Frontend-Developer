@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img {
+            border: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .item {
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="item" src="images/beef.jpg" alt="beef image" style="width: 240px; height: 180px;">
+        <img class="item" src="images/liver.jpg" alt="beef image" style="width: 240px; height: 180px;">
+        <img class="item" src="images/liver1.jpg" alt="beef image" style="width: 240px; height: 180px;">
+        <img class="item" src="images/liver2.jpg" alt="beef image" style="width: 240px; height: 180px;">
+        <img class="item" src="images/sausage.jpg" alt="beef image" style="width: 240px; height: 180px;">
+        <img class="item"  src="images/beef.jpg" alt="beef image" style="width: 240px; height: 180px;">
+    </div>
+</body>
+</html>
