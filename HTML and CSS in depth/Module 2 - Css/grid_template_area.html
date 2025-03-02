@@ -1,0 +1,49 @@
+<!-- 
+ Steps
+ 1. Define the grid using the display prperty
+ 2. Set the height and width of the grid
+ 3. Set the grid template areas with the appropriate identifiers
+ 4. Add the appropriate sizes for the rows in the grid using the 'grid-template-rows' property
+ 5. Add the appropriate sizes for the columns in the grid using the 'grid-template-columns' property
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template <Area></Area></title>
+    <style>
+        body{
+            display: grid;
+            height: 200px;
+            grid-template-areas: "head head"
+                                 "nav main"
+                                 "footer footer";
+            grid-template-rows: 30px 1fr 30px;
+            grid-template-columns: 150px 1fr;
+        }
+        header{
+            grid-area: head;
+            background-color: lightblue;
+        }
+        .nav-bar{
+            grid-area: nav;
+            background-color: lightcoral;
+        }
+        main{
+            grid-area: main;
+            background-color: lightpink;
+        }
+        footer{
+            grid-area: footer;
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <header> Header </header>
+    <nav class="nav-bar"> Navigation Bar</nav>
+    <main> Main Area </main>
+    <footer> Footer </footer>
+</body>
+</html>
