@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* already looked at elemnt, class and id selectors */
+        /***********Attribute Selectors************** */
+        /* To target all anchors with a defined class */
+        a[class] {
+            color: red;
+        }
+        /* To target all anchors with links that have a common word */
+        a[class*="about"] {
+            color: green;
+        }
+        /* To target the nth child of a parent element */
+        p:nth-child(2) {
+            color: blue;
+        }
+        /*Alternatively*/
+        p:nth-of-type(2) {
+            color: blue;
+        }
+
+        /***********Attribute Selectors************** */
+        /* Star selector: To select all the elements. Usually used to reset default browser styling*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Group Selectors */
+        a, p {
+            font-size: 1.5em;
+        }
+        /***********Specificity hierarchy************** */
+        /* 1.In-Line*/
+        /* 2. IDs */
+        /* 3. Classes, attributes and pseudo-classes */
+        /* 4. Elements and pseudo-elements */
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <a href="https://about-meta.com/" class="about">Meta - Home</a>
+        <p>
+            <a href="https://about-meta.com/company-info" class="about">Meta - About</a>
+        </p>
+        <p>
+            <a href="https://about-meta.com/technologies/" class="home">Meta - Technologies</a>
+        </p>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combination</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background-color: lightblue;
+        }
+        /* Descendant Selector */
+        /* Selects all the <em> elements that are descendants of a <p> element */
+        /* p em {
+            color: red;
+        } */
+
+        /* Child Selector */
+        /* Selects all the <em> elements that are direct children of a <p> element */
+        /* p > em {
+            color: blue;
+        } */
+
+        /* Adjacent Sibling Selector */
+        /* Selects all the <ul> elements that are immediately preceded by the <body> element */
+        ul + li {
+            background-color: lightcoral;
+            color: green;
+        }
+
+        /* General Sibling Selector */
+        /* Selects all the <ul> elements that are siblings of a <div> element */
+        div ~ ul {
+            background-color: #edefee;
+            color: #333333;
+            padding: 10px;
+            box-shadow: 1px 1px 3px #333333;
+        }
+    </style>
+</head>
+<body>
+    <li><img src="images/beef.jpg" alt="beef image" style="width: 150px;"></li>
+    <p><b>Basic info about Buff Beef</b></p>
+    <div>About</div>
+    <ul>
+        <li>Based in Tamale, Ghana.</li>
+        <li>The chefs draw inspiration from Dagomba, Kusasi and Ewe culture.</li>
+        <li>Buff Beef is a family-owned business.</li>
+    </ul>
+    <p><b>Info about the owners</b></p>
+    <div>Employee/Owner</div>
+    <ul>
+        <li>Buff Beef is owned by husband and wife; Kat and Haj</li>
+        <li>Haj uses cultural recipes she has perfected over the years</li>
+        <li>Kat on the other hand handles the restaurant's web app and the finances</li>
+    </ul>
+</body>
+</html>
