@@ -1,0 +1,59 @@
+<!-- The general rule of thumbs in using psuedo classes by developers is LVHA 
+ i.e link, visited, hover, active -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes </title>
+    <style>
+        *{
+            font-family: Arial, sans-serif;
+            background-color: #E0E0E2;
+        }
+        .textual{
+            border: 1px;
+            padding: 10px;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: green;
+        }
+        .textual:hover{
+            box-shadow: 5px 0px 25px black;
+        }
+        a:active{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h3>Buffy Beef</h3>
+    <p>
+        <a href="https://instagram.com/amribnzaid" target="_blank">Instagram Page</a>
+
+        </a>
+    </p>
+    <p>
+        Buffy Beef is a family-owned business based in Tamale, Ghana. The chefs draw inspiration from Dagomba, Kusasi, and Ewe culture.
+    </p>
+    <p class="textual">
+        lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.
+    </p>
+    <p class="textual">
+        vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; proin eget tortor risus.
+    </p>
+    <p class="textual">
+        sed ultricies lacus ut libero posuere, nec ultricies nunc tincidunt.
+    </p>
+    <p class="textual">
+        consequat nunc, nec ultricies nunc tincidunt. 
+    </p>
+</body>
+</html>
