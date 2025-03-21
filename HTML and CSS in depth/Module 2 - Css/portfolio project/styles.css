@@ -5,7 +5,7 @@ header {
 	min-height: 8rem;
     animation: topdown 900ms;
 
-	background-image: url("images/Artboard 22.png");
+	background-image: url("https://res.cloudinary.com/dzydlthkj/image/upload/v1742313114/Artboard_22_akojsv.png");
 	background-size: 40%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -71,7 +71,7 @@ footer {
 	padding-right: 1rem;
 }
 #promotion {
-	background-image: url("images/promotion.jpg");
+	background-image: url("https://res.cloudinary.com/dzydlthkj/image/upload/v1742313115/promotion_scayw4.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
